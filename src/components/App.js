@@ -12,8 +12,8 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Header />
 				<LandingPage />
+				<Header />
 				<AboutMe />
 				<Skills />
 				<Projects />
