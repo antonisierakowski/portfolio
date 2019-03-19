@@ -1,0 +1,23 @@
+@import 'mixins';
+@import 'variables';
+
+.header {
+    position: fixed;
+    width: 100%;
+    font-size: 2rem;
+    background: $secondary-color;
+    height: 5.2rem;
+    border-bottom: 0.3rem solid $color2;
+    .contents {
+        color: white;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .fa-bars {
+            
+            margin-right: 2rem;
+        }
+    }
+
+}

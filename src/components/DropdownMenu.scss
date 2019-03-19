@@ -1,0 +1,10 @@
+@import 'mixins';
+@import 'variables';
+
+.dropdown-menu-hidden {
+    height: 0;
+}
+
+.dropdown-menu {
+    height: 10rem;
+}

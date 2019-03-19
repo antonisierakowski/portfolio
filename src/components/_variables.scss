@@ -1,16 +1,23 @@
-$site-width: 1000px;
-$tablet-width: calc(100% - 90px);
 $mobile-width: calc(100% - 18px);
+$tablet-width: calc(100% - 90px);
+$site-width: 1000px;
 
-$primary-color: rgb(255, 246, 247);
-$secondary-color: rgb(56, 56, 56);
+$primary-color: #E1FFF5;
+$secondary-color: #2F4858;
 
-// PALETTE
-$color1: #DACED4;
-$color2: #B3A9B4;
-$color3: #898696;
-$color4: #5C6678;
-$color5: #2F4858;
+// PALETTE1
+$color1: #B5E0E0;
+$color2: #8FBFCE;
+$color3: #749EBB;
+$color4: #677BA3;
+$color5: #635883;
+
+// PALETTE2
+$color21: #B7D8D4;
+$color22: #90B2B4;
+$color23: #6C8E95;
+$color24: #4C6A76;
+$color25: #2F4858;
 
 //VARIOUS COLORS
-$add-color1: #FFF9DA;
+$add-color1: #E7CDFF;
