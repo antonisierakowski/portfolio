@@ -5,11 +5,35 @@
     background: black;
 
     .contents {
+        height: 30rem;
         padding: $section-padding;
         color: white;
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        .title {
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+            width: 8rem;
+        }
+
+        .main-info {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .social-links {
+            width: 6rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .copyright {
+            font-size: 1.2rem;
+        }
     }
 }

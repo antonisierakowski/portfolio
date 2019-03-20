@@ -2,27 +2,35 @@
 @import 'variables';
 
 #aboutMe {
-    background: $bg-color1;
+    background: linear-gradient(to bottom, $bg-color1 0, darken($bg-color1, 4%) 100%);
     // width: 100%;
     
 
     .contents {
         padding: $section-padding;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         .upper-section {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin-bottom: 2rem;
+
             h2 {
                 font-size: 2.3rem;
+                width: 15rem;
             }
             img {
                 border-radius: 50%;
                 width: 15rem;
+                @include shadow(0.5rem, 0.8rem);
             }
         }
         .lower-section {
+            line-height: 3rem;
+            .emphasized {
+                color: darken($primary-color, 65%);
+                font-size: 1.75rem;
+            }
             & > * {
                 margin-bottom: 2rem;
             }

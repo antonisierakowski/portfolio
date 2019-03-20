@@ -2,7 +2,7 @@
 @import 'variables';
 
 #skills {
-    background: $bg-color2;
+    background: linear-gradient(to bottom, lighten($bg-color2, 3%) 0, $bg-color2 100%);
     
     .contents {
         padding: $section-padding;

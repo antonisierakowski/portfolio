@@ -2,23 +2,20 @@
 @import 'variables';
 
 #header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    font-size: 2rem;
-    background: $secondary-color;
-    height: 5.2rem;
-    border-bottom: 0.3rem solid $color2;
-    .contents {
-        color: white;
-        height: 100%;
+    position: fixed;
+    transition: 0.5s;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    
+    .hamburger-icon {
+        background: black;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        .fa-bars {
-            
-            margin-right: 2rem;
-        }
+        @include shadow(0.5rem, 1rem)
     }
-
 }

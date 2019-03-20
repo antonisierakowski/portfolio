@@ -8,10 +8,10 @@ export default class Footer extends Component {
 			<section id='footer'>
 				<div className='center-wrapper'>
 					<div className='contents'>
+						<h3 className='title'>Contact</h3>
 						<div className='main-info'>
-							<h3 className='title'>Kontakt</h3>
-							<span><i class="fas fa-phone"></i> 516 077 385</span>
-							<span><i class="fas fa-envelope"></i> antonisierakowski@gmail.com</span>
+							<span><i class="fas fa-phone"></i> +48 516 077 385</span>
+							<span><i class="fas fa-envelope"></i> <a href="mailto:antonisierakowski@gmail.com">antonisierakowski@gmail.com</a></span>
 						</div>
 						<div className='social-links'>
 							<a href='https://github.com/antonisierakowski'><i class="fab fa-github-square fa-2x"></i></a>

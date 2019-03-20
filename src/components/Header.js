@@ -8,7 +8,7 @@ export default class Header extends Component {
 		super(props);
 		this.state = {
 			displayDropdown: false,
-			position: 'static'
+			opacity: '0',
 		}
 	}
 
@@ -19,15 +19,15 @@ export default class Header extends Component {
 	}
 
 	componentDidMount() {
-		window.addEventListener('scroll', (event) => {
+		window.addEventListener('scroll', () => {
 			if (window.pageYOffset >= document.getElementById('landingPage').clientHeight) {
 				this.setState({
-					position: 'fixed',
+					opacity: '1',
 				})
 			}
 			else {
 				this.setState({
-					position: 'relative',
+					opacity: '0',
 				})
 				
 			}
@@ -37,17 +37,20 @@ export default class Header extends Component {
 	render() {
 		console.log(this.positon)
 		return (
-			<section id='header' style={ { position: this.state.position, } }>
-				<div className='center-wrapper'>
+			<section id='header' style={ { opacity: this.state.opacity, } }>
+				{/* <div className='center-wrapper'>
 					<div className='contents'>
 						<div className='left-side'>
-							{/* <span>Antoni Sierakowski</span> */}
+							
 						</div>
 						<div className='right-side'>
 							<i className="fas fa-bars fa-lg" onClick={this.menuClickHandler}></i>
 						</div>
 					</div>
-					{/* {this.state.displayDropdown && <DropdownMenu />} */}
+					{this.state.displayDropdown && <DropdownMenu />}
+				</div> */}
+				<div className='hamburger-icon'>
+					<i className="fas fa-bars fa-3x" onClick={this.menuClickHandler}></i>
 				</div>
 			</section>
 		);

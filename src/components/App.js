@@ -13,7 +13,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<LandingPage />
-				{/* <Header /> */}
+				<Header />
 				<AboutMe />
 				<Skills />
 				<Projects />
