@@ -5,7 +5,7 @@ import './Skills.scss';
 export default class Skills extends Component {
   render() {
     return (
-        <div className='skills'>
+        <div id='skills'>
         </div>
     );
   }

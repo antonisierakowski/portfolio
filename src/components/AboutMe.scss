@@ -1,10 +1,31 @@
 @import 'mixins';
 @import 'variables';
 
-#about-me {
+#aboutMe {
+    background: $bg-color1;
     width: 100%;
     height: 100vh;
+    
     .contents {
-        font-size: 2rem;
+        padding: 2rem 0 2rem 0;
+        font-size: 1.8rem;
+        .upper-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 2rem;
+            h2 {
+                font-size: 2.3rem;
+            }
+            img {
+                border-radius: 50%;
+                width: 15rem;
+            }
+        }
+        .lower-section {
+            & > * {
+                margin-bottom: 2rem;
+            }
+        }
     }
 }

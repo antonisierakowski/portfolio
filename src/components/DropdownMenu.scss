@@ -1,14 +1,15 @@
 @import 'mixins';
 @import 'variables';
 
-.dropdown-menu-hidden {
+.dropdown-menu.hidden {
     height: 0;
-    transition: 0.2s;
-    border: 1px solid black;
 }
 
 .dropdown-menu {
     height: 10rem;
+    width: 100%;
+    top: 5.2rem;
     transition: 0.2s;
-    border: 1px solid black;
+    background: $color4;
+    position: absolute;
 }

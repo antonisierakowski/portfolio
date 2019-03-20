@@ -8,6 +8,7 @@ export default class Header extends Component {
 		super(props);
 		this.state = {
 			displayDropdown: false,
+			position: 'static'
 		}
 	}
 
@@ -16,10 +17,27 @@ export default class Header extends Component {
 			return {displayDropdown: !prevstate.displayDropdown};
 		})
 	}
+
+	componentDidMount() {
+		window.addEventListener('scroll', (event) => {
+			if (window.pageYOffset >= document.getElementById('landingPage').clientHeight) {
+				this.setState({
+					position: 'fixed',
+				})
+			}
+			else {
+				this.setState({
+					position: 'relative',
+				})
+				
+			}
+		});
+	}
 	
 	render() {
+		console.log(this.positon)
 		return (
-			<div className='header'>
+			<section id='header' style={ { position: this.state.position, } }>
 				<div className='center-wrapper'>
 					<div className='contents'>
 						<div className='left-side'>
@@ -29,9 +47,9 @@ export default class Header extends Component {
 							<i className="fas fa-bars fa-lg" onClick={this.menuClickHandler}></i>
 						</div>
 					</div>
+					{/* {this.state.displayDropdown && <DropdownMenu />} */}
 				</div>
-				{this.state.displayDropdown && <DropdownMenu />}
-			</div>
+			</section>
 		);
   	}
 }

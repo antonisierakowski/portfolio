@@ -1,8 +1,9 @@
 @import 'mixins';
 @import 'variables';
 
-.header {
-    position: fixed;
+#header {
+    top: 0;
+    left: 0;
     width: 100%;
     font-size: 2rem;
     background: $secondary-color;
