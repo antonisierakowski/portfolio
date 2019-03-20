@@ -1,2 +1,27 @@
 @import 'mixins';
 @import 'variables';
+
+#skills {
+    background: $bg-color2;
+    
+    .contents {
+        padding: $section-padding;
+        font-size: 1.6rem;
+        h2 {
+            font-size: 2.3rem;
+            margin-bottom: 1.6rem;
+        }
+        .logos {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            i {
+                width: 40%;
+                text-align: center;
+                margin: 1.5rem;
+            }
+        }
+    }
+}

@@ -1,2 +1,13 @@
 @import 'mixins';
 @import 'variables';
+
+#projects {
+    background: $bg-color1;
+    
+    .contents {
+        padding: $section-padding;
+        h2 {
+            font-size: 2.3rem;
+        }
+    }
+}

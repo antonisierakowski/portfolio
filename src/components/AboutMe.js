@@ -12,11 +12,11 @@ export default class AboutMe extends Component {
 		// }
 
 		return (
-				<div id='aboutMe'>
+				<section id='aboutMe'>
 					<div className='center-wrapper'>
 						<div className='contents'>
 							<div className='upper-section'>
-								<h2>About me.</h2>
+								<h2 className='title'>About me.</h2>
 								<div><img src={portrait} alt='portrait'></img></div>
 							</div>
 							<div className='lower-section'>
@@ -26,7 +26,7 @@ export default class AboutMe extends Component {
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 		);
 	}
 }

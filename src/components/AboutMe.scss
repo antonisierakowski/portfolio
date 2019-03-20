@@ -3,12 +3,12 @@
 
 #aboutMe {
     background: $bg-color1;
-    width: 100%;
-    height: 100vh;
+    // width: 100%;
     
+
     .contents {
-        padding: 2rem 0 2rem 0;
-        font-size: 1.8rem;
+        padding: $section-padding;
+        font-size: 1.6rem;
         .upper-section {
             display: flex;
             justify-content: space-around;
