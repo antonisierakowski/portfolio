@@ -9,6 +9,9 @@
     align-items: center;
     background: black;
     .container {
+        font-family: 'Quicksand', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,7 +31,7 @@
         .view-more-button {
             width: 18rem;
             height: 3.5rem;
-            border: 3px solid $color2;
+            border: 3px solid $color3;
             font-size: 1.6rem;
             transition: 0.2s;
             cursor: pointer;

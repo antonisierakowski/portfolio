@@ -35,7 +35,6 @@ export default class Header extends Component {
 	}
 	
 	render() {
-		console.log(this.positon)
 		return (
 			<section id='header' style={ { opacity: this.state.opacity, } }>
 				{/* <div className='center-wrapper'>

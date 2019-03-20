@@ -25,15 +25,5 @@
                 @include shadow(0.5rem, 0.8rem);
             }
         }
-        .lower-section {
-            line-height: 3rem;
-            .emphasized {
-                color: darken($primary-color, 65%);
-                font-size: 1.75rem;
-            }
-            & > * {
-                margin-bottom: 2rem;
-            }
-        }
     }
 }
