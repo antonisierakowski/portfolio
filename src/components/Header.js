@@ -36,7 +36,7 @@ export default class Header extends Component {
 	
 	render() {
 		return (
-			<section id='header' className={this.state.displayDropdown && 'menu-expanded'} style={ { opacity: this.state.opacity, } }>
+			<section id='header' className={this.state.displayDropdown ? 'menu-expanded' : null } style={ { opacity: this.state.opacity, } }>
 				{/* <div className='center-wrapper'>
 					<div className='contents'>
 						<div className='left-side'>
@@ -51,7 +51,7 @@ export default class Header extends Component {
 				<div className='hamburger-icon' onClick={this.menuClickHandler}>
 					{this.state.displayDropdown ? <i className="fas fa-times"></i> : <i className="fas fa-bars" ></i> }
 				</div>
-				{this.state.displayDropdown && <MenuList />}
+				{ this.state.displayDropdown && <MenuList clickHandler={this.menuClickHandler} /> }
 			</section>
 		);
   	}
