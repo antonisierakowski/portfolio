@@ -2,12 +2,49 @@
 @import 'variables';
 
 #projects {
-    background: $bg-color1;
+    background: linear-gradient(to bottom, $bg-color1 0, darken($bg-color1, 5%) 100%);
     
     .contents {
         padding: $section-padding;
-        h2 {
+        & > h2 {
             font-size: 2.3rem;
+            margin-bottom: 1rem;
+        }
+
+        & > span {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            text-align: right;
+            color: $color5;
+        }
+        
+        .entries {
+            position: relative;
+    
+            i {
+                font-size: 3rem;
+                background: rgba(255, 255, 255, 0.582);
+                border-radius: 50%;
+                width: 4rem;
+                height: 4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include shadow(1rem, 1rem);
+            }
+    
+            .fi-angle-left {
+                position: absolute;
+                top: 10rem;
+                left: 1rem;
+            }
+    
+            .fi-angle-right {
+                position: absolute;
+                top: 10rem;
+                right: 1rem;
+            }
         }
     }
 }

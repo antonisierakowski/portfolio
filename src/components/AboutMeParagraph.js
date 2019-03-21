@@ -16,8 +16,6 @@ export default class AboutMeParagraph extends Component {
     }
 
 	render() {
-        const collapsedContent = this.props.content;
-        console.log(this.props.content)
         if (this.state.collapsed === false) {
             return ( 
                 <p onClick={this.handleClick} className='paragraph-content'>

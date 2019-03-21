@@ -21,7 +21,7 @@ export default class AboutMe extends Component {
 				<div className='center-wrapper'>
 					<div className='contents'>
 						<div className='upper-section'>
-							<h2 className='title'>About me.</h2>
+							<h2 className='title'>ABOUT ME</h2>
 							<div><img src={portrait} alt='portrait'></img></div>
 						</div>
 						<div className='paragraphs'>

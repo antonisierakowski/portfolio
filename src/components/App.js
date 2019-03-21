@@ -5,7 +5,6 @@ import LandingPage from './LandingPage';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Projects from './Projects';
-import Contact from './Contact';
 import Footer from './Footer';
 
 class App extends Component {
@@ -17,7 +16,6 @@ class App extends Component {
 				<AboutMe />
 				<Skills />
 				<Projects />
-				{/* <Contact /> */}
 				<Footer />
 			</div>
 		);

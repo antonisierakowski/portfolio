@@ -71,6 +71,12 @@
                 h3 {
                     font-weight: 700;
                     font-size: 1.7rem;
+                    position: relative;
+                    i {
+                        position: absolute;
+                        top: 0;
+                        left: -2rem;
+                    }
                 }
             }
 

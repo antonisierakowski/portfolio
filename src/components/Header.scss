@@ -16,6 +16,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @include shadow(0.5rem, 1rem)
+        @include shadow(0.5rem, 1rem);
     }
 }
