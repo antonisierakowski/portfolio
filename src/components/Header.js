@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Header.scss';
-import DropdownMenu from './DropdownMenu';
+import MenuList from './MenuList';
 
 
 export default class Header extends Component {
@@ -36,7 +36,7 @@ export default class Header extends Component {
 	
 	render() {
 		return (
-			<section id='header' style={ { opacity: this.state.opacity, } }>
+			<section id='header' className={this.state.displayDropdown && 'menu-expanded'} style={ { opacity: this.state.opacity, } }>
 				{/* <div className='center-wrapper'>
 					<div className='contents'>
 						<div className='left-side'>
@@ -48,9 +48,10 @@ export default class Header extends Component {
 					</div>
 					{this.state.displayDropdown && <DropdownMenu />}
 				</div> */}
-				<div className='hamburger-icon'>
-					<i className="fas fa-bars fa-3x" onClick={this.menuClickHandler}></i>
+				<div className='hamburger-icon' onClick={this.menuClickHandler}>
+					{this.state.displayDropdown ? <i className="fas fa-times"></i> : <i className="fas fa-bars" ></i> }
 				</div>
+				{this.state.displayDropdown && <MenuList />}
 			</section>
 		);
   	}

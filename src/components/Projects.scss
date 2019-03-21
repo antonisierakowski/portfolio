@@ -3,7 +3,6 @@
 
 #projects {
     background: linear-gradient(to bottom, $bg-color1 0, darken($bg-color1, 5%) 100%);
-    
     .contents {
         padding: $section-padding;
         & > h2 {

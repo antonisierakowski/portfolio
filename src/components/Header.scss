@@ -2,20 +2,43 @@
 @import 'variables';
 
 #header {
-    position: fixed;
-    transition: 0.5s;
-    top: 1rem;
-    right: 1rem;
-    color: white;
-    
-    .hamburger-icon {
-        background: black;
-        border-radius: 50%;
-        width: 5rem;
-        height: 5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include shadow(0.5rem, 1rem);
-    }
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	transition: 0.5s;
+	color: white;
+	border-radius: 100%;
+	z-index: 10000;
+	.hamburger-icon {
+		transition: 0.2s;
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
+		background: black;
+		border-radius: 50%;
+		width: 5rem;
+		height: 5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			transform: scale(1.1);
+		}
+		@include shadow(0.5rem, 1rem);
+
+		i {
+			font-size: 3rem;
+		}
+	}
+}
+
+#header.menu-expanded {
+	border-radius: 0%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 20rem;
+	padding: 2rem;
+	background: black;
+	border-bottom: 4px solid $color5;
 }

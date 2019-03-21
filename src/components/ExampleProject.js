@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './ExampleProject.scss';
+import { NONAME } from 'dns';
 
 export default class ExampleProject extends Component {
     constructor(props) {
@@ -37,10 +38,11 @@ export default class ExampleProject extends Component {
 
 		return (
 			<div className='project' style={style} onMouseEnter={this.mouseEnterHandler} onMouseLeave={this.mouseLeaveHandler}>
-                <div className='shadow-layer' style={opacity}>
+                {/* <div className='shadow-layer' style={opacity}> */}
+                <div className={this.state.hovered ? 'shadow-layer' : 'unhovered'}>
+                <i className="fas fa-hand-point-up"></i>
                     <div className='project-content'>
                         <div className='top-section'>
-                            
                             <span className='description'>{this.props.data.description}</span>
                         </div>
                         <div className='mid-section'>
