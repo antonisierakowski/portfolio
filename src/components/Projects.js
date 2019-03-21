@@ -28,7 +28,7 @@ projects[2] = {
     urlLive: 'https://antonisierakowski.github.io/TwojaPogoda.pl/build/index.html',
     urlGithub: 'https://github.com/antonisierakowski/TwojaPogoda.pl',
     tools: ['HTML', 'CSS', 'SASS', 'jQuery', 'Webpack'],
-    description: "App showing you current weather and one-week forecast for selected city. Made during Coders' Lab bootcamp.",
+    description: "App showing you current weather and 5-day forecast for selected city. Made during Coders' Lab bootcamp.",
     pic: weatherApp,
 }
 projects[3] = {
@@ -70,9 +70,7 @@ export default class Projects extends Component {
 						<h2 className='title'>MY PROJECTS</h2>
 						<span>These were made by me to showcase my web development abilities. I'm constatly working on new projects, so this section will grow. A few of these were made during Coders' Lab bootcamp, specified if true.</span>
 						<div className='entries'>
-							<i onClick={ () => this.handleArrowClick('left') } className="fi fi-angle-left"></i>
-							<i onClick={ () => this.handleArrowClick('right') } className="fi fi-angle-right"></i>
-							<ExampleProject data={projects[this.state.currentProjectShown]}/>
+							<ExampleProject data={projects[this.state.currentProjectShown]} clickHandler={this.handleArrowClick}/>
 						</div>
 					</div>
 				</div>

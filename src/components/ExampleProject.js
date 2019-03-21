@@ -40,8 +40,13 @@ export default class ExampleProject extends Component {
                 <div className='shadow-layer' style={opacity}>
                     <div className='project-content'>
                         <div className='top-section'>
-                            <span className='name'>{this.props.data.name}</span>
+                            
                             <span className='description'>{this.props.data.description}</span>
+                        </div>
+                        <div className='mid-section'>
+                            <i onClick={ () => this.props.clickHandler('left') } className="fi fi-angle-left"></i>
+                            <span className='name'>{this.props.data.name}</span>
+                            <i onClick={ () => this.props.clickHandler('right') } className="fi fi-angle-right"></i>
                         </div>
                         <div className='bottom-section'>
                             <ul className='technologies-used'>{technologiesUsed}</ul>

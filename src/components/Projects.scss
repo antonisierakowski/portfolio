@@ -19,32 +19,6 @@
             color: $color5;
         }
         
-        .entries {
-            position: relative;
-    
-            i {
-                font-size: 3rem;
-                background: rgba(255, 255, 255, 0.582);
-                border-radius: 50%;
-                width: 4rem;
-                height: 4rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                @include shadow(1rem, 1rem);
-            }
-    
-            .fi-angle-left {
-                position: absolute;
-                top: 10rem;
-                left: 1rem;
-            }
-    
-            .fi-angle-right {
-                position: absolute;
-                top: 10rem;
-                right: 1rem;
-            }
-        }
+
     }
 }
