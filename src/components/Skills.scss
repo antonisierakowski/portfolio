@@ -2,25 +2,95 @@
 @import 'variables';
 
 #skills {
-    background: linear-gradient(to bottom, lighten($bg-color2, 3%) 0, $bg-color2 100%);
+    background: linear-gradient(to bottom, lighten($bg-color2, 4%) 0, $bg-color2 100%);
     
     .contents {
         padding: $section-padding;
         font-size: 1.6rem;
-        h2 {
-            font-size: 2.3rem;
-            margin-bottom: 1.6rem;
-        }
-        .logos {
-            width: 100%;
+
+
+        .title-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-end;
+            height: 5rem;
             align-items: center;
-            i {
+            margin-bottom: 2rem;
+            .title {
+                font-size: 2.3rem;
+                width: 60%;
+                text-align: right;
+            }
+        }
+
+        .my-skills-section {
+            display: flex;
+            margin-bottom: 3rem;
+            .technologies-caption {
+                display: flex;
+                align-items: center;
+                font-size: 1.9rem;
+                font-weight: 700;
                 width: 40%;
-                text-align: center;
-                margin: 1.5rem;
+                color: $color5;
+                padding: 1rem;
+            }
+            .logos {
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    width: 30%;
+                    font-size: 4.5rem;
+                    margin-bottom: 1.8rem;
+                    text-align: center;
+                
+                
+                }
+            }
+        }
+
+        .future-skills-section {
+            display: flex;
+            flex-direction: row-reverse;
+            .future-skills-captions {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 60%;
+                
+                
+                color: $color5;
+                padding: 1rem;
+                text-align: right;
+                span {
+                    font-size: 1.6rem;
+                }
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.7rem;
+                }
+            }
+
+            .future-skills-logos {
+                width: 40%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+    
+                i, div {
+                    width: 100%;
+                    font-size: 4rem;
+                    text-align: left;
+                    margin: 1.5rem;
+
+                }
+                img {
+                    width: 4rem;
+                }
             }
         }
     }

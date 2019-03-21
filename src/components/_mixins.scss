@@ -22,3 +22,44 @@
 // @mixin for-big-desktop-up {
 // 	@media (min-width: 1800px) { @content; }
 // }
+
+
+
+
+
+
+// HEXAGON
+@mixin hexagon($width, $background) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	$height: 60px / 104px * $width;
+	background-color: $background;
+	width: $width;
+	height: $height;
+	position:relative;
+	margin: ($height / 2 + 20);
+	box-sizing:border-box;
+	
+	&:before {
+		content: " ";
+		width: 0; height: 0;
+		border-bottom: ($height / 2) solid $background;
+		border-left: ($width / 2) solid transparent;
+		border-right: ($width / 2) solid transparent;
+		position: absolute;
+		display:block;
+		top:-($height / 2);
+	}
+	&:after {
+		content: " ";
+		width: 0; height: 0;
+		border-top: solid $background;
+		border-top-width: ($height / 2);
+		border-left: ($width/2) solid transparent;
+		border-right: ($width/2) solid transparent;
+		position: absolute;
+		display:block;
+		top:$height;
+	}
+}
