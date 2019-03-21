@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/basic-synth.52c457c4.png"
   },
   {
-    "revision": "cba87d16987b184ae7c4",
-    "url": "/portfolio/static/css/main.5bab2d0c.chunk.css"
+    "revision": "33421588c3623db4db11",
+    "url": "/portfolio/static/css/main.b91c01c4.chunk.css"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/pokedex.3461ec49.png"
   },
   {
-    "revision": "cba87d16987b184ae7c4",
-    "url": "/portfolio/static/js/main.7195f0a0.chunk.js"
+    "revision": "33421588c3623db4db11",
+    "url": "/portfolio/static/js/main.78ddc127.chunk.js"
   },
   {
     "revision": "1c6f0c39ba3f845dbecaea2dde1cad13",
@@ -48,19 +48,19 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fontisto.5b2dc6fc.woff"
   },
   {
-    "revision": "80bc092bef57222b52e7e3e711b4cdf2",
-    "url": "/portfolio/static/media/fontisto.80bc092b.eot"
-  },
-  {
     "revision": "b49ae8ab2dbccb02c4d11caaacf09eab",
     "url": "/portfolio/static/media/fontisto.b49ae8ab.ttf"
+  },
+  {
+    "revision": "80bc092bef57222b52e7e3e711b4cdf2",
+    "url": "/portfolio/static/media/fontisto.80bc092b.eot"
   },
   {
     "revision": "a49032383769aac6ced4",
     "url": "/portfolio/static/css/2.1b78d58f.chunk.css"
   },
   {
-    "revision": "5073fd4783542be546a6dc4ce012c627",
+    "revision": "9f8409bf26c08c0ab24004af3a7e27f7",
     "url": "/portfolio/index.html"
   }
 ];
