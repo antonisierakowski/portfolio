@@ -12,7 +12,7 @@ projects[0] = {
     urlLive: 'https://antonisierakowski.github.io/pokedex/',
     urlGithub: 'https://github.com/antonisierakowski/pokedex',
     tools: ['HTML', 'CSS', 'SASS', 'React', 'Webpack', 'RWD'],
-    description: 'Simple Pokédex app made with React.js, using info from PokéAPI.',
+    description: 'Simple Pokédex app made with React.js, using information retrieved from PokéAPI.',
     pic: pokedex,
 }
 projects[1] = {
@@ -20,7 +20,7 @@ projects[1] = {
     urlLive: 'https://antonisierakowski.github.io/basic_synth/build/index.html',
     urlGithub: 'https://github.com/antonisierakowski/basic_synth',
     tools: ['HTML', 'CSS', 'SASS', 'jQuery', 'Webpack'],
-    description: 'Basic synthesizer made using jQuery and tone.js pack.',
+    description: 'Basic sound synthesizer made using jQuery and tone.js package.',
     pic: basicSynth,
 }
 projects[2] = {
@@ -28,7 +28,7 @@ projects[2] = {
     urlLive: 'https://antonisierakowski.github.io/TwojaPogoda.pl/build/index.html',
     urlGithub: 'https://github.com/antonisierakowski/TwojaPogoda.pl',
     tools: ['HTML', 'CSS', 'SASS', 'jQuery', 'Webpack'],
-    description: "This apps shows you weather and 5-day forecast for selected city. Made during Coders' Lab bootcamp.",
+    description: "This apps shows you info about current weather and a 5-day forecast for selected city. Made during Coders' Lab bootcamp.",
     pic: weatherApp,
 }
 projects[3] = {

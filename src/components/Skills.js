@@ -3,7 +3,6 @@ import './Skills.scss';
 import '../../node_modules/fontisto/sass/fontisto/fontisto.scss'
 import typescriptLogo from '../images/icons/typescript.svg'
 
-
 export default class Skills extends Component {
 	render() {
 		return (
@@ -14,7 +13,7 @@ export default class Skills extends Component {
 						<div className='my-skills-section'>
 							<h3 className='technologies-caption'>In my projects I've been using following technologies:</h3>
 							<div className='logos'>
-								<i className="fi fi-html5"></i>
+								<i onMouseEnter={this.handleMouseEnter} key='front' className="fi fi-html5"></i>
 								<i className="fi fi-css3"></i>
 								<i className="fab fa-js-square"></i>
 								<i className="fi fi-jquery"></i>
@@ -25,13 +24,12 @@ export default class Skills extends Component {
 								<i className="fi fi-webpack"></i>
 								<i className="fi fi-sass"></i>
 								<i className="fi fi-react"></i>
-								
 							</div>
 						</div>
 						<div className='future-skills-section'>
 							<div className='future-skills-captions'>
 								<h3>I'm constantly learning new tools - in the near future, I'm planning to broaden my knowledge in these areas.<i className="fi fi-arrow-left-l"></i></h3>
-								<span>I develop websites responsively, so they work properly and look good on any device, big or small.</span>
+								<span>I am able to develop websites responsively, so they work properly and look good on any device, big or small.</span>
 								
 							</div>
 							<div className='future-skills-logos'>

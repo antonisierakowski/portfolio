@@ -31,7 +31,7 @@
 
         .project-content {
             position: absolute;
-            right: 1000px;
+            right: 10000px;
             opacity: 0;
             transition: 0.4s linear;
             height: 100%;
@@ -147,7 +147,7 @@
         .fa-hand-point-up {
             opacity: 0;
             position: fixed;
-            right: 1000px;
+            right: 10000px;
             transition: 0.5s;
             font-size: 5rem;
             color: $primary-color;
@@ -259,9 +259,6 @@
     }
 }
 
-
-
-
 @keyframes pulse {
 	0% {
 		-webkit-transform: scale(1);
@@ -272,4 +269,12 @@
     100% { 
 		-webkit-transform: scale(1);
 	}
+}
+
+@include for-tablet-only {
+
+}
+
+@include for-desktop-up {
+
 }

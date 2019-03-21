@@ -14,6 +14,7 @@
 	color: white;
 	z-index: 10000;
 	.hamburger-icon {
+		cursor: pointer;
 		transition: 0.2s;
 		position: fixed;
 		top: 1rem;
@@ -45,4 +46,12 @@
 	padding: 2rem;
 	background: black;
 	border-bottom: 4px solid $color5;
+}
+
+@include for-tablet-only {
+
+}
+
+@include for-desktop-up {
+
 }

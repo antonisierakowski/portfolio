@@ -101,3 +101,44 @@
         }
     }
 }
+
+// .logo-card {
+//     position: relative;
+//     width: 30%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     i {
+//         transition: 0.5s;
+//     }
+
+//     &:hover {
+//         i {
+//             opacity: 0;
+//         }
+//         div {
+//             opacity: 1;
+//         }
+//     }
+//     div {
+//         transition: 0.6s;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         opacity: 0;
+//     }
+
+// }
+
+@include for-tablet-only {
+
+}
+
+@include for-desktop-up {
+
+}

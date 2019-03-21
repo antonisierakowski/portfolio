@@ -33,3 +33,11 @@
         font-weight: 700;
     }
 }
+
+@include for-tablet-only {
+
+}
+
+@include for-desktop-up {
+
+}
