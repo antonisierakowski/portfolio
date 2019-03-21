@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/basic-synth.52c457c4.png"
   },
   {
-    "revision": "92cf3999324debf9d941",
-    "url": "/portfolio/static/css/main.8495124f.chunk.css"
+    "revision": "85ad9c8cb786a7b804b4",
+    "url": "/portfolio/static/css/main.c0c99471.chunk.css"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fontisto.625f3922.svg"
   },
   {
-    "revision": "9252fa8a09f8edac5894",
-    "url": "/portfolio/static/js/2.7a1bff72.chunk.js"
+    "revision": "a49032383769aac6ced4",
+    "url": "/portfolio/static/js/2.0279cf9d.chunk.js"
   },
   {
     "revision": "2773063b8053fcba15677b34ef7895b7",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/pokedex.3461ec49.png"
   },
   {
-    "revision": "92cf3999324debf9d941",
-    "url": "/portfolio/static/js/main.42576990.chunk.js"
+    "revision": "85ad9c8cb786a7b804b4",
+    "url": "/portfolio/static/js/main.7892dd05.chunk.js"
   },
   {
     "revision": "1c6f0c39ba3f845dbecaea2dde1cad13",
@@ -48,19 +48,19 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fontisto.80bc092b.eot"
   },
   {
-    "revision": "5b2dc6fc8ca439534ca2b506569fafc3",
-    "url": "/portfolio/static/media/fontisto.5b2dc6fc.woff"
-  },
-  {
     "revision": "b49ae8ab2dbccb02c4d11caaacf09eab",
     "url": "/portfolio/static/media/fontisto.b49ae8ab.ttf"
   },
   {
-    "revision": "9252fa8a09f8edac5894",
+    "revision": "5b2dc6fc8ca439534ca2b506569fafc3",
+    "url": "/portfolio/static/media/fontisto.5b2dc6fc.woff"
+  },
+  {
+    "revision": "a49032383769aac6ced4",
     "url": "/portfolio/static/css/2.1b78d58f.chunk.css"
   },
   {
-    "revision": "015548573c4d257d51a94cd9341a3063",
+    "revision": "e7ceb7a9156d7f024936423f23afd3e5",
     "url": "/portfolio/index.html"
   }
 ];
