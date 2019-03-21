@@ -7,12 +7,12 @@
         padding: $section-padding;
         & > h2 {
             font-size: 2.3rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2.5rem;
         }
 
         & > span {
             font-size: 1.6rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2.5rem;
             display: inline-block;
             text-align: right;
             color: $color5;
@@ -23,9 +23,83 @@
 }
 
 @include for-tablet-only {
-
+    #projects {
+        background: linear-gradient(to bottom, $bg-color1 0, darken($bg-color1, 5%) 100%);
+        .contents {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 4rem 0 4rem 0;
+            & > h2 {
+                
+                font-size: 2.3rem;
+                margin-bottom: 3rem;
+                width: 100%;
+                align-self: flex-start;
+            }
+    
+            & > span {
+                font-weight: 700;
+                // letter-spacing: 0.1rem;
+                line-height: 2rem;
+                border: 0.4rem solid $color5;
+                padding: 0.5rem;
+                order: 2;
+                font-size: 1.5rem;
+                display: inline-block;
+                text-align: right;
+                color: $color5;
+                width: 30%;
+                margin-bottom: 0;
+            }
+            
+            .entries {
+                width: 60%;
+            }
+    
+        }
+    }
 }
 
 @include for-desktop-up {
-
+    #projects {
+        background: linear-gradient(to bottom, $bg-color1 0, darken($bg-color1, 5%) 100%);
+        .contents {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 4rem 0 4rem 0;
+            & > h2 {
+                
+                font-size: 2.3rem;
+                margin-bottom: 3rem;
+                width: 100%;
+                align-self: flex-start;
+            }
+    
+            & > span {
+                font-weight: 700;
+                // letter-spacing: 0.1rem;
+                line-height: 2rem;
+                border: 0.4rem solid $color5;
+                padding: 0.5rem;
+                order: 2;
+                font-size: 1.5rem;
+                display: inline-block;
+                text-align: right;
+                color: $color5;
+                width: 30%;
+                margin-bottom: 0;
+            }
+            
+            .entries {
+                width: 60%;
+            }
+    
+        }
+    }
 }

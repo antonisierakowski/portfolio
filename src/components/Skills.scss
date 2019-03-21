@@ -136,9 +136,223 @@
 // }
 
 @include for-tablet-only {
-
+    #skills {
+        background: linear-gradient(to bottom, lighten($bg-color2, 4%) 0, $bg-color2 100%);
+        
+        .contents {
+            padding: $section-padding;
+            font-size: 1.6rem;
+    
+    
+            .title-container {
+                display: flex;
+                justify-content: flex-end;
+                height: 5rem;
+                align-items: center;
+                margin-bottom: 2rem;
+                .title {
+                    font-size: 2.3rem;
+                    width: 50%;
+                    text-align: right;
+                }
+            }
+    
+            .my-skills-section {
+                display: flex;
+                margin-bottom: 0;
+                justify-content: space-between;
+                .technologies-caption {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.9rem;
+                    font-weight: 700;
+                    width: 40%;
+                    color: $color5;
+                    padding: 1rem;
+                    border: 0.3rem solid $color5;
+                    height: 50%;
+                }
+                .logos {
+                    width: 50%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    i {
+                        width: 30%;
+                        font-size: 4.5rem;
+                        margin-bottom: 1.8rem;
+                        text-align: center;
+                    
+                    
+                    }
+                }
+            }
+    
+            .future-skills-section {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                .future-skills-captions {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 80%;
+                    
+                    
+                    color: $color5;
+                    padding: 1rem;
+                    text-align: right;
+                    span {
+                        font-size: 1.6rem;
+                        width: 40%;
+                        border: 0.3rem solid $color5;
+                        padding: 0.9rem;
+                        align-self: flex-end;
+                    }
+                    h3 {
+                        font-weight: 700;
+                        font-size: 1.7rem;
+                        position: relative;
+                        i {
+                            position: absolute;
+                            top: 0;
+                            left: -2rem;
+                        }
+                    }
+                }
+    
+                .future-skills-logos {
+                    width: 20%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+        
+                    i, div {
+                        width: 100%;
+                        font-size: 4rem;
+                        text-align: left;
+                        margin: 1.5rem;
+    
+                    }
+                    img {
+                        width: 4rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include for-desktop-up {
+    #skills {
+    background: linear-gradient(to bottom, lighten($bg-color2, 4%) 0, $bg-color2 100%);
+    
+    .contents {
+        padding: $section-padding;
+        font-size: 1.6rem;
 
+
+        .title-container {
+            display: flex;
+            justify-content: flex-end;
+            height: 5rem;
+            align-items: center;
+            margin-bottom: 2rem;
+            .title {
+                font-size: 2.3rem;
+                width: 50%;
+                text-align: right;
+            }
+        }
+
+        .my-skills-section {
+            display: flex;
+            margin-bottom: 0;
+            justify-content: space-between;
+            .technologies-caption {
+                display: flex;
+                align-items: center;
+                font-size: 1.9rem;
+                font-weight: 700;
+                width: 40%;
+                color: $color5;
+                padding: 1rem;
+                border: 0.3rem solid $color5;
+                height: 50%;
+            }
+            .logos {
+                width: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                i {
+                    width: 30%;
+                    font-size: 4.5rem;
+                    margin-bottom: 1.8rem;
+                    text-align: center;
+                
+                
+                }
+            }
+        }
+
+        .future-skills-section {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            .future-skills-captions {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 80%;
+                
+                
+                color: $color5;
+                padding: 1rem;
+                text-align: right;
+                span {
+                    font-size: 1.6rem;
+                    width: 40%;
+                    border: 0.3rem solid $color5;
+                    padding: 0.9rem;
+                    align-self: flex-end;
+                }
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.7rem;
+                    position: relative;
+                    i {
+                        position: absolute;
+                        top: 0;
+                        left: -2rem;
+                    }
+                }
+            }
+
+            .future-skills-logos {
+                width: 20%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+    
+                i, div {
+                    width: 100%;
+                    font-size: 4rem;
+                    text-align: left;
+                    margin: 1.5rem;
+
+                }
+                img {
+                    width: 4rem;
+                }
+            }
+        }
+    }
+}
 }

@@ -51,9 +51,103 @@
 }
 
 @include for-tablet-only {
-
+ #landingPage {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        .container {
+            font-family: 'Quicksand', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+            font-size: 2.2rem;
+            color: white;
+            text-align: center;
+            line-height: 2.7rem;
+            background: rgba(0, 0, 0, 0.568);
+            padding: 3rem;
+    
+            span {
+                margin-bottom: 3rem;
+            }
+    
+            .view-more-button {
+                width: 18rem;
+                height: 3.5rem;
+                border: 3px solid $color3;
+                font-size: 1.6rem;
+                transition: 0.2s;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.1);
+                    
+                    .fa-arrow-alt-circle-right {
+                        
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            .fa-arrow-alt-circle-right {
+                transition: 0.2s;
+            }
+        }
+    }
 }
 
 @include for-desktop-up {
-
+    #landingPage {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        .container {
+            font-family: 'Quicksand', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+            font-size: 2.2rem;
+            color: white;
+            text-align: center;
+            line-height: 2.7rem;
+            background: rgba(0, 0, 0, 0.568);
+            padding: 3rem;
+    
+            span {
+                margin-bottom: 3rem;
+            }
+    
+            .view-more-button {
+                width: 18rem;
+                height: 3.5rem;
+                border: 3px solid $color3;
+                font-size: 1.6rem;
+                transition: 0.2s;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.1);
+                    
+                    .fa-arrow-alt-circle-right {
+                        
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            .fa-arrow-alt-circle-right {
+                transition: 0.2s;
+            }
+        }
+    }
 }

@@ -9,12 +9,6 @@ const p3 = <span>Right now, I'm looking for <span className='emphasized'>steady 
 const p4 = <span>Fun fact! I'm also an actively working electronic music producer. I've spent many years developing my skills in sound design, mixing, mastering and composition - and see a lot of parallels between making music and programming. If you're interested in my music, check out my <a href='https://soundcloud.com/sieraque'>soundcloud!</a></span>;
 
 export default class AboutMe extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-
-		}
-	}
 	render() {
 		return (
 			<section id='aboutMe'>
@@ -25,10 +19,10 @@ export default class AboutMe extends Component {
 							<div><img src={portrait} alt='portrait'></img></div>
 						</div>
 						<div className='paragraphs'>
-							<AboutMeParagraph content={p1} collapsed={false} /> 							
-							<AboutMeParagraph content={p2} collapsed={false} /> 	
-							<AboutMeParagraph content={p3} collapsed={false} /> 	
-							<AboutMeParagraph content={p4} collapsed={false} /> 	
+							<AboutMeParagraph content={p1}/> 							
+							<AboutMeParagraph content={p2}/> 	
+							<AboutMeParagraph content={p3}/> 	
+							<AboutMeParagraph content={p4}/> 	
 						</div>
 					</div>
 				</div>

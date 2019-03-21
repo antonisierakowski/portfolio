@@ -29,9 +29,59 @@
 }
 
 @include for-tablet-only {
-
+    #aboutMe {
+        background: linear-gradient(to bottom, $bg-color1 0, darken($bg-color1, 4%) 100%);
+        // width: 100%;
+        
+    
+        .contents {
+            padding: $section-padding;
+            font-size: 1.7rem;
+            .upper-section {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 2rem;
+    
+                h2 {
+                    font-size: 2.3rem;
+                    width: 15rem;
+                }
+                img {
+                    border-radius: 50%;
+                    width: 15rem;
+                    @include shadow(0.5rem, 0.8rem);
+                }
+            }
+        }
+    }
 }
 
 @include for-desktop-up {
-
+    #aboutMe {
+        background: linear-gradient(to bottom, $bg-color1 0, darken($bg-color1, 4%) 100%);
+        // width: 100%;
+        
+    
+        .contents {
+            padding: $section-padding;
+            font-size: 1.7rem;
+            .upper-section {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 2rem;
+    
+                h2 {
+                    font-size: 2.3rem;
+                    width: 15rem;
+                }
+                img {
+                    border-radius: 50%;
+                    width: 15rem;
+                    @include shadow(0.5rem, 0.8rem);
+                }
+            }
+        }
+    }
 }

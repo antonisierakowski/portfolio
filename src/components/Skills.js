@@ -28,7 +28,7 @@ export default class Skills extends Component {
 						</div>
 						<div className='future-skills-section'>
 							<div className='future-skills-captions'>
-								<h3>I'm constantly learning new tools - in the near future, I'm planning to broaden my knowledge in these areas.<i className="fi fi-arrow-left-l"></i></h3>
+								<h3>I'm constantly learning to use new tools - in the near future, I'm planning to broaden my knowledge in these areas.<i className="fi fi-arrow-left-l"></i></h3>
 								<span>I am able to develop websites responsively, so they work properly and look good on any device, big or small.</span>
 								
 							</div>

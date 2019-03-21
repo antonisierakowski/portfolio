@@ -17,8 +17,58 @@
 
 @include for-tablet-only {
 
+    .menu-list {
+        height: 100%;
+        transition: 0.2s;
+
+        
+        ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                letter-spacing: 0.4rem;
+                color:white;
+                font-size: 2.1rem;
+                margin-right: 2.6rem;
+                text-align: center;
+            }
+        }
+        a {
+            transition: 0.2s;
+            &:hover {
+                letter-spacing: 1rem;
+            }
+        }
+    }
 }
 
 @include for-desktop-up {
 
+    .menu-list {
+        height: 100%;
+        transition: 0.2s;
+
+        
+        ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                letter-spacing: 0.4rem;
+                color:white;
+                font-size: 2.1rem;
+                margin-right: 2.6rem;
+                text-align: center;
+            }
+        }
+        a {
+            transition: 0.2s;
+            &:hover {
+                letter-spacing: 1rem;
+            }
+        }
+    }
 }
