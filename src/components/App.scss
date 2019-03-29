@@ -1,2 +1,21 @@
 @import 'mixins';
 @import 'variables';
+
+.asd {
+    display: flex;
+    .center-wrapper {
+        margin: 0 auto;
+        max-width: 50%;
+        height: 100%;
+
+
+    }
+
+    #projects {
+        width: 50%;
+    }
+
+    #skills {
+        width: 50%;
+    }
+}

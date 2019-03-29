@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './Projects.scss';
 import ExampleProject from './ExampleProject';
 import pokedex from '../images/pokedex.png';
@@ -40,41 +40,67 @@ projects[3] = {
     pic: gameOfLife,
 }
 
+export default function Projects(_props) {
+	const [currentProjectShown, setCurrentProject] = useState(0);
 
-export default class Projects extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			currentProjectShown: 0,
-		}
-	}
-
-	handleArrowClick = dir => {
+	const handleArrowClick = dir => {
 		if (dir === 'left') {
-			this.setState({
-				currentProjectShown: (this.state.currentProjectShown === 0) ? projects.length - 1 : this.state.currentProjectShown - 1,
-			})
+			setCurrentProject((currentProjectShown === 0) ? projects.length - 1 : currentProjectShown - 1)
 		}
 		if (dir === 'right') {
-			this.setState({
-				currentProjectShown: (this.state.currentProjectShown === projects.length - 1) ? 0 : this.state.currentProjectShown + 1,
-			})
+			setCurrentProject((currentProjectShown === projects.length - 1) ? 0 : currentProjectShown + 1)
 		}
 	}
 
-	render() {
-		return (
-			<section id='projects'>
-				<div className='center-wrapper'>
-					<div className='contents'>
-						<h2 className='title'>MY PROJECTS</h2>
-						<span>These were made by me to showcase my web development abilities. As I'm constatly working on new projects, this section is definietely going to grow. A few of the older ones here were made during Coders' Lab bootcamp.</span>
-						<div className='entries'>
-							<ExampleProject data={projects[this.state.currentProjectShown]} clickHandler={this.handleArrowClick}/>
-						</div>
+	return (
+		<section id='projects'>
+			<div className='center-wrapper'>
+				<div className='contents'>
+					<h2 className='title'>MY PROJECTS</h2>
+					<span>These were made by me to showcase my web development abilities. As I'm constatly working on new projects, this section is definietely going to grow. A few of the older ones here were made during Coders' Lab bootcamp.</span>
+					<div className='entries'>
+						<ExampleProject data={projects[currentProjectShown]} clickHandler={handleArrowClick}/>
 					</div>
 				</div>
-			</section>
-		);
-	}
+			</div>
+		</section>
+	);
 }
+
+// export default class Projects extends Component {
+// 	constructor(props) {
+// 		super(props);
+// 		this.state = {
+// 			currentProjectShown: 0,
+// 		}
+// 	}
+
+// 	handleArrowClick = dir => {
+// 		if (dir === 'left') {
+// 			this.setState({
+// 				currentProjectShown: (this.state.currentProjectShown === 0) ? projects.length - 1 : this.state.currentProjectShown - 1,
+// 			})
+// 		}
+// 		if (dir === 'right') {
+// 			this.setState({
+// 				currentProjectShown: (this.state.currentProjectShown === projects.length - 1) ? 0 : this.state.currentProjectShown + 1,
+// 			})
+// 		}
+// 	}
+
+// 	render() {
+// 		return (
+// 			<section id='projects'>
+// 				<div className='center-wrapper'>
+// 					<div className='contents'>
+// 						<h2 className='title'>MY PROJECTS</h2>
+// 						<span>These were made by me to showcase my web development abilities. As I'm constatly working on new projects, this section is definietely going to grow. A few of the older ones here were made during Coders' Lab bootcamp.</span>
+// 						<div className='entries'>
+// 							<ExampleProject data={projects[this.state.currentProjectShown]} clickHandler={this.handleArrowClick}/>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</section>
+// 		);
+// 	}
+// }

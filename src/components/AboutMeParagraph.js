@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './AboutMeParagraph.scss';
 
-export default class AboutMeParagraph extends Component {
-	render() {
-        return (
-            <p className='paragraph-content'>
-                {this.props.content}
-            </p>
-        )
-	}
+const AboutMeParagraph = props => {
+    return (
+        <p className='paragraph-content'>
+            {props.content}
+        </p>
+    )
 }
+
+export default AboutMeParagraph;

@@ -1,65 +1,45 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './ExampleProject.scss';
-import { NONAME } from 'dns';
 
-export default class ExampleProject extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            hovered: false,
-        }
+export default function ExampleProject(props) {
+    const [hovered, setHoverState] = useState(false);
+
+    const style = {
+        backgroundImage: `url(${props.data.pic})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        // backgroundColor: 'rgba(0, 0, 0, 0.315);'
     }
 
-    mouseEnterHandler = () => {
-        this.setState({
-            hovered: true,
-        })
-    }
-    
-    mouseLeaveHandler = () => {
-        this.setState({
-            hovered: false,
-        })
-    }
+    const technologiesUsed = props.data.tools.map(e => <li key={e}>{e}</li>)
 
-	render() {
-        const style = {
-            backgroundImage: `url(${this.props.data.pic})`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center center',
-            // backgroundColor: 'rgba(0, 0, 0, 0.315);'
-        }
+    const opacity = {opacity: 0,}
+    opacity.opacity = (hovered) ? '1': '0';
 
-        const technologiesUsed = this.props.data.tools.map(e => <li key={e}>{e}</li>)
-
-        const opacity = {opacity: 0,}
-        opacity.opacity = (this.state.hovered) ? '1': '0';
-
-		return (
-			<div className='project' style={style} onMouseEnter={this.mouseEnterHandler} onMouseLeave={this.mouseLeaveHandler}>
-                {/* <div className='shadow-layer' style={opacity}> */}
-                <div className={this.state.hovered ? 'shadow-layer' : 'unhovered'}>
-                <i className="fas fa-hand-point-up"></i>
-                    <div className='project-content'>
-                        <div className='top-section'>
-                            <span className='description'>{this.props.data.description}</span>
-                        </div>
-                        <div className='mid-section'>
-                            <i onClick={ () => this.props.clickHandler('left') } className="fi fi-angle-left"></i>
-                            <span className='name'>{this.props.data.name}</span>
-                            <i onClick={ () => this.props.clickHandler('right') } className="fi fi-angle-right"></i>
-                        </div>
-                        <div className='bottom-section'>
-                            <ul className='technologies-used'>{technologiesUsed}</ul>
-                            <div className='links'>
-                                <a className='link' href={this.props.data.urlLive}>LIVE</a>
-                                <a className='link' href={this.props.data.urlGithub}>GITHUB</a>
-                            </div>
+    return (
+        <div className='project' style={style} onMouseEnter={ () => setHoverState(true) } onMouseLeave={ () => setHoverState(false) }>
+            {/* <div className='shadow-layer' style={opacity}> */}
+            <div className={hovered ? 'shadow-layer' : 'unhovered'}>
+            <i className="fas fa-hand-point-up"></i>
+                <div className='project-content'>
+                    <div className='top-section'>
+                        <span className='description'>{props.data.description}</span>
+                    </div>
+                    <div className='mid-section'>
+                        <i onClick={ () => props.clickHandler('left') } className="fi fi-angle-left"></i>
+                        <span className='name'>{props.data.name}</span>
+                        <i onClick={ () => props.clickHandler('right') } className="fi fi-angle-right"></i>
+                    </div>
+                    <div className='bottom-section'>
+                        <ul className='technologies-used'>{technologiesUsed}</ul>
+                        <div className='links'>
+                            <a className='link' href={props.data.urlLive}>LIVE</a>
+                            <a className='link' href={props.data.urlGithub}>GITHUB</a>
                         </div>
                     </div>
                 </div>
-			</div>
-		);
-	}
+            </div>
+        </div>
+    );
 }
