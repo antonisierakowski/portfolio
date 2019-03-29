@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/basic-synth.52c457c4.png"
   },
   {
-    "revision": "e900643b3ec80e32def6",
+    "revision": "305e41b55563d4df2cea",
     "url": "/portfolio/static/css/main.ee530ef6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fontisto.625f3922.svg"
   },
   {
-    "revision": "a49032383769aac6ced4",
-    "url": "/portfolio/static/js/2.0279cf9d.chunk.js"
+    "revision": "b3d056086dbf601704e3",
+    "url": "/portfolio/static/js/2.85ca063c.chunk.js"
   },
   {
     "revision": "2773063b8053fcba15677b34ef7895b7",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/pokedex.3461ec49.png"
   },
   {
-    "revision": "e900643b3ec80e32def6",
-    "url": "/portfolio/static/js/main.2b3d9ffc.chunk.js"
+    "revision": "305e41b55563d4df2cea",
+    "url": "/portfolio/static/js/main.ecc9df8c.chunk.js"
   },
   {
     "revision": "1c6f0c39ba3f845dbecaea2dde1cad13",
@@ -44,6 +44,10 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/game-of-life.7e429ab7.png"
   },
   {
+    "revision": "80bc092bef57222b52e7e3e711b4cdf2",
+    "url": "/portfolio/static/media/fontisto.80bc092b.eot"
+  },
+  {
     "revision": "5b2dc6fc8ca439534ca2b506569fafc3",
     "url": "/portfolio/static/media/fontisto.5b2dc6fc.woff"
   },
@@ -52,15 +56,11 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fontisto.b49ae8ab.ttf"
   },
   {
-    "revision": "80bc092bef57222b52e7e3e711b4cdf2",
-    "url": "/portfolio/static/media/fontisto.80bc092b.eot"
-  },
-  {
-    "revision": "a49032383769aac6ced4",
+    "revision": "b3d056086dbf601704e3",
     "url": "/portfolio/static/css/2.1b78d58f.chunk.css"
   },
   {
-    "revision": "99f433af07e32400b21584c16f277201",
+    "revision": "46c74f9ca818b5fdc8e107108800260e",
     "url": "/portfolio/index.html"
   }
 ];
