@@ -22,6 +22,7 @@ const Skills = () => {
 							<i className="fi fi-webpack"></i>
 							<i className="fi fi-sass"></i>
 							<i className="fi fi-react"></i>
+							<i className="fi fi-redux"></i>
 						</div>
 					</div>
 					<div className='future-skills-section'>
@@ -32,7 +33,6 @@ const Skills = () => {
 						</div>
 						<div className='future-skills-logos'>
 							<div><img alt='typescript-logo' src={typescriptLogo}/></div>
-							<i className="fi fi-redux"></i>
 							<i className="fi fi-electronjs"></i>
 							<i className="fab fa-node-js"></i>
 						</div>
