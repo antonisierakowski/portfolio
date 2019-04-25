@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/pokedex.3461ec49.png"
   },
   {
-    "revision": "9600ab6c31b584122f84",
+    "revision": "112683a13279dc44ced6",
     "url": "/portfolio/static/css/main.8c04600e.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/split-the-chores.a480e553.png"
   },
   {
-    "revision": "9600ab6c31b584122f84",
-    "url": "/portfolio/static/js/main.1706c0f7.chunk.js"
+    "revision": "112683a13279dc44ced6",
+    "url": "/portfolio/static/js/main.c0ddd9db.chunk.js"
   },
   {
     "revision": "52c457c471980ed99b9860d504759a58",
@@ -52,10 +52,6 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/game-of-life.7e429ab7.png"
   },
   {
-    "revision": "b49ae8ab2dbccb02c4d11caaacf09eab",
-    "url": "/portfolio/static/media/fontisto.b49ae8ab.ttf"
-  },
-  {
     "revision": "80bc092bef57222b52e7e3e711b4cdf2",
     "url": "/portfolio/static/media/fontisto.80bc092b.eot"
   },
@@ -64,11 +60,15 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fontisto.5b2dc6fc.woff"
   },
   {
+    "revision": "b49ae8ab2dbccb02c4d11caaacf09eab",
+    "url": "/portfolio/static/media/fontisto.b49ae8ab.ttf"
+  },
+  {
     "revision": "662a4e6e645e7ae1d542",
     "url": "/portfolio/static/css/2.1b78d58f.chunk.css"
   },
   {
-    "revision": "c990afdd896267e507982936dfebbb9a",
+    "revision": "5c46561501dbaa2747595a44120c36c8",
     "url": "/portfolio/index.html"
   }
 ];
