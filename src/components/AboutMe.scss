@@ -19,11 +19,20 @@
                 font-size: 2.3rem;
                 width: 15rem;
             }
-            img {
-                border-radius: 50%;
+            .portrait-container {
                 width: 15rem;
-                @include shadow(0.5rem, 0.8rem);
+                height: 15rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    border-radius: 50%;
+                    width: 15rem;
+                    height: 15rem;
+                    @include shadow(0.5rem, 0.8rem);
+                }
             }
+
         }
     }
 }
@@ -43,15 +52,6 @@
                 align-items: center;
                 margin-bottom: 2rem;
     
-                h2 {
-                    font-size: 2.3rem;
-                    width: 15rem;
-                }
-                img {
-                    border-radius: 50%;
-                    width: 15rem;
-                    @include shadow(0.5rem, 0.8rem);
-                }
             }
         }
     }
@@ -72,15 +72,6 @@
                 align-items: center;
                 margin-bottom: 2rem;
     
-                h2 {
-                    font-size: 2.3rem;
-                    width: 15rem;
-                }
-                img {
-                    border-radius: 50%;
-                    width: 15rem;
-                    @include shadow(0.5rem, 0.8rem);
-                }
             }
         }
     }

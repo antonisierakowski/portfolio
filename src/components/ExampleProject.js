@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './ExampleProject.scss';
+import { Fade } from 'react-reveal'
 
 export default function ExampleProject(props) {
-    const [hovered, setHoverState] = useState(false);
+    const [hovered, setHovered] = useState(false);
 
     const style = {
         backgroundImage: `url(${props.data.pic})`,
@@ -18,18 +19,23 @@ export default function ExampleProject(props) {
     opacity.opacity = (hovered) ? '1': '0';
 
     return (
-        <div className='project' style={style} onMouseEnter={ () => setHoverState(true) } onMouseLeave={ () => setHoverState(false) }>
-            {/* <div className='shadow-layer' style={opacity}> */}
-            <div className={hovered ? 'shadow-layer' : 'unhovered'}>
+        <div
+            className='project' 
+            style={style}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            onTouchStart={() => setHovered(true)}
+        >
+            <div className={hovered ? 'shadow-layer' : 'unhovered'} >
             <i className="fas fa-hand-point-up"></i>
-                <div className='project-content'>
+                <div className='project-content' >
                     <div className='top-section'>
                         <span className='description'>{props.data.description}</span>
                     </div>
                     <div className='mid-section'>
-                        <i onClick={ () => props.clickHandler('left') } className="fi fi-angle-left"></i>
+                        <i onClick={ () => props.clickHandler('left') } className="fi fi-angle-left project-arrow"></i>
                         <span className='name'>{props.data.name}</span>
-                        <i onClick={ () => props.clickHandler('right') } className="fi fi-angle-right"></i>
+                        <i onClick={ () => props.clickHandler('right') } className="fi fi-angle-right project-arrow"></i>
                     </div>
                     <div className='bottom-section'>
                         <ul className='technologies-used'>{technologiesUsed}</ul>

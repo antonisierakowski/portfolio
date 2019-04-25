@@ -46,6 +46,11 @@ code {
 	border-bottom: 3px solid $color5;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 @include for-tablet-only {
 	.center-wrapper {
 		margin: 0 auto;

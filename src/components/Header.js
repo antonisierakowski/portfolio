@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.scss';
 import MenuList from './MenuList';
+import { Icon } from '@material-ui/core'
 
 export default function Header(props) {
 
@@ -22,19 +23,9 @@ export default function Header(props) {
 
 	return (
 		<section id='header' className={displayDropdown ? 'menu-expanded' : null } style={ { opacity: opacity, } }>
-			{/* <div className='center-wrapper'>
-				<div className='contents'>
-					<div className='left-side'>
-						
-					</div>
-					<div className='right-side'>
-						<i className="fas fa-bars fa-lg" onClick={this.menuClickHandler}></i>
-					</div>
-				</div>
-				{this.state.displayDropdown && <DropdownMenu />}
-			</div> */}
+			
 			<div className='hamburger-icon' onClick={menuClickHandler}>
-				{displayDropdown ? <i className="fas fa-times"></i> : <i className="fas fa-bars" ></i> }
+				{displayDropdown ? <Icon style={{fontSize: '3rem'}}>close</Icon> : <Icon style={{fontSize: '3rem'}}>menu</Icon> }
 			</div>
 			{ displayDropdown && <MenuList clickHandler={menuClickHandler} /> }
 		</section>
