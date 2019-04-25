@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/pokedex.3461ec49.png"
   },
   {
-    "revision": "0cb79e43ebbaa9f85553",
-    "url": "/portfolio/static/css/main.3ed8746b.chunk.css"
+    "revision": "d9c0f1af7b7ce75f77b2",
+    "url": "/portfolio/static/css/main.8c04600e.chunk.css"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fontisto.625f3922.svg"
   },
   {
-    "revision": "3353d680ae5c3df751d2",
-    "url": "/portfolio/static/js/2.a883e9f6.chunk.js"
+    "revision": "b008f311c82e0452d2e8",
+    "url": "/portfolio/static/js/2.d6c0e9f5.chunk.js"
   },
   {
     "revision": "2773063b8053fcba15677b34ef7895b7",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/split-the-chores.a480e553.png"
   },
   {
-    "revision": "0cb79e43ebbaa9f85553",
-    "url": "/portfolio/static/js/main.8002b348.chunk.js"
+    "revision": "d9c0f1af7b7ce75f77b2",
+    "url": "/portfolio/static/js/main.dce547d8.chunk.js"
   },
   {
     "revision": "52c457c471980ed99b9860d504759a58",
@@ -52,23 +52,23 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/game-of-life.7e429ab7.png"
   },
   {
-    "revision": "b49ae8ab2dbccb02c4d11caaacf09eab",
-    "url": "/portfolio/static/media/fontisto.b49ae8ab.ttf"
+    "revision": "80bc092bef57222b52e7e3e711b4cdf2",
+    "url": "/portfolio/static/media/fontisto.80bc092b.eot"
   },
   {
     "revision": "5b2dc6fc8ca439534ca2b506569fafc3",
     "url": "/portfolio/static/media/fontisto.5b2dc6fc.woff"
   },
   {
-    "revision": "80bc092bef57222b52e7e3e711b4cdf2",
-    "url": "/portfolio/static/media/fontisto.80bc092b.eot"
+    "revision": "b49ae8ab2dbccb02c4d11caaacf09eab",
+    "url": "/portfolio/static/media/fontisto.b49ae8ab.ttf"
   },
   {
-    "revision": "3353d680ae5c3df751d2",
+    "revision": "b008f311c82e0452d2e8",
     "url": "/portfolio/static/css/2.1b78d58f.chunk.css"
   },
   {
-    "revision": "6343b88b8dc391dac462c2e7b6a287a6",
+    "revision": "d410bfeff6388b460de5bbcb98137dc7",
     "url": "/portfolio/index.html"
   }
 ];
