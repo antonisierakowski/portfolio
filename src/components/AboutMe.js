@@ -5,7 +5,6 @@ import AboutMeParagraph from './AboutMeParagraph';
 import ImageLoader from 'react-loading-image'
 import { CircularProgress } from '@material-ui/core'
 import { Fade } from 'react-reveal'
-import Pulse from 'react-reveal/Pulse'
 
 const p1 = <span><span className='emphasized'>My name is Antoni.</span> I'm a graduate of Coders' Lab programming bootcamp held here in Poland, where I've learned solid fundamentals of web development. It pushed me to hone my newly acquired skills on my own - which I'm currently doing every day. Im dedicated at getting better in <span className='emphasized'>developing fast, dynamic, intuitive and responsive web apps.</span></span>
 const p2 = <span>Since I can remember, I've always had an interest in, forgive the term, 'nerdy' stuff: when I was 10 years old, I'd write programs in BASIC on an 80's computer, or write simple Turbo Pascal pieces of software on MS-DOS PC. I remember creating my first website when I was around 12, it was back when you had to design your layout around tables, crazy stuff. Recently I've even been trying to make a game for 90's gaming console using its assembly language! That's a lot of fun, but for now I prefer to stick to more current stuff. What I'm trying to say, is that programming has always been somewhere back in my mind - until I actually took up the challenge to become a developer.</span>
@@ -27,12 +26,10 @@ const AboutMe = () => {
 						</div></Fade>
 					</div>
 					<div className='paragraphs'>
-						<Fade bottom collapse>
-							<AboutMeParagraph content={p1}/> 							
-							<AboutMeParagraph content={p2}/> 	
-							<AboutMeParagraph content={p3}/> 	
-							<AboutMeParagraph content={p4}/> 
-						</Fade>	
+						<Fade left><AboutMeParagraph content={p1}/></Fade>							
+						<Fade left><AboutMeParagraph content={p2}/></Fade>	
+						<Fade left><AboutMeParagraph content={p3}/></Fade>	
+						<Fade left><AboutMeParagraph content={p4}/></Fade>
 					</div>
 				</div>
 			</div>

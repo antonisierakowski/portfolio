@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutMeParagraph.scss';
+import { Fade } from 'react-reveal'
 
 const AboutMeParagraph = props => {
     return (

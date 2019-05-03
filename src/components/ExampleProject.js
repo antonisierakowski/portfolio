@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './ExampleProject.scss';
-import { Fade } from 'react-reveal'
 
 export default function ExampleProject(props) {
     const [hovered, setHovered] = useState(false);

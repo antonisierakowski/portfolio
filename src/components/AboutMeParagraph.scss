@@ -3,9 +3,6 @@
 
 .paragraphs {
     line-height: 3rem;
-    & > * {
-        transition: 0.6s;
-    }
 
     .emphasized {
         color: darken($primary-color, 65%);
@@ -13,19 +10,8 @@
     }
 
     .paragraph-content {
-        // transition: 300s linear;
         max-height: 100rem;
         margin-bottom: 2rem;
-    }
-    .paragraph-content.collapsed {
-        // transition: 0.6s linear;
-        max-height: 4.5rem;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.123) 100%);
-        border-radius: 0 0 10px 10px;
-        // border-bottom: 1px solid rgba(0, 0, 0, 0.596);
-        //box-shadow: 0 7px 0 10px rgba(0, 0, 0, 0.479);
-        box-shadow: 0 5px 5px -2px #888;
-        overflow: hidden;
     }
 
     a {
@@ -37,9 +23,6 @@
 @include for-tablet-only {
     .paragraphs {
         line-height: 3rem;
-        & > * {
-            transition: 0.6s;
-        }
     
         .emphasized {
             color: darken($primary-color, 65%);
@@ -47,19 +30,8 @@
         }
     
         .paragraph-content {
-            // transition: 300s linear;
             max-height: 100rem;
             margin-bottom: 2rem;
-        }
-        .paragraph-content.collapsed {
-            // transition: 0.6s linear;
-            max-height: 4.5rem;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.123) 100%);
-            border-radius: 0 0 10px 10px;
-            // border-bottom: 1px solid rgba(0, 0, 0, 0.596);
-            //box-shadow: 0 7px 0 10px rgba(0, 0, 0, 0.479);
-            box-shadow: 0 5px 5px -2px #888;
-            overflow: hidden;
         }
     
         a {
@@ -72,9 +44,6 @@
 @include for-desktop-up {
     .paragraphs {
         line-height: 3rem;
-        & > * {
-            transition: 0.6s;
-        }
     
         .emphasized {
             color: darken($primary-color, 65%);
@@ -82,19 +51,8 @@
         }
     
         .paragraph-content {
-            // transition: 300s linear;
             max-height: 100rem;
             margin-bottom: 2rem;
-        }
-        .paragraph-content.collapsed {
-            // transition: 0.6s linear;
-            max-height: 4.5rem;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.123) 100%);
-            border-radius: 0 0 10px 10px;
-            // border-bottom: 1px solid rgba(0, 0, 0, 0.596);
-            //box-shadow: 0 7px 0 10px rgba(0, 0, 0, 0.479);
-            box-shadow: 0 5px 5px -2px #888;
-            overflow: hidden;
         }
     
         a {
